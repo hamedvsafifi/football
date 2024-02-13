@@ -6,22 +6,29 @@
     <meta name="author" content="afifi" />
     <meta name="describtion" content="afifi first  web page" />
     <link rel="icon" href="favicon.ico" type="image/icon" />
-    <link rel="stylesheet" href="style.css" type="text/css" />
-    <style>
-      body {
-        background-color: rgba(33, 29, 29, 0.962);
-        color: whitesmoke;
-      }
-    </style>
+    <link rel="stylesheet" href="style/style.css" type="text/css" />
   </head>
   <body>
     <header>
       <nav>
-        <a href="football.html">matches - المباريات </a>
-        <a href="Hnavbar/shorts.html">shorts - لقطات</a>
-        <a href="playes.html">players - اللاعبون</a>
-        <a href="news.html">news - اهم الاخبار</a>
-        <a href="contact.html">support - الدعم</a>
+        <button>
+          <a href="Hnavbar/football.html">matches - المباريات </a>
+        </button>
+        <button>
+          <a href="Hnavbar/shorts.html">shorts - لقطات</a>
+        </button>
+        <button>
+          <a href="Hnavbar/playes.html">players - اللاعبون</a>
+        </button>
+        <button>
+          <a href="Hnavbar/playes.html">players - اللاعبون</a>
+        </button>
+        <button>
+          <a href="Hnavbar/news.html">news - اهم الاخبار</a>
+        </button>
+        <button>
+          <a href="Hnavbar/contact.html">support - الدعم</a>
+        </button>
       </nav>
     </header>
     <br />
@@ -34,8 +41,11 @@
           information about football
         </p>
       </article>
-      <fieldset>
-        <form action="www.google.com" method="get">
+
+      <form action="www.google.com" method="get">
+        <fieldset>
+          <legend>Sign Up</legend>
+          <br />
           <label for="fname">
             first name:
             <input
@@ -43,7 +53,7 @@
               name="first"
               id="fname"
               required
-              placeholder="type ur name"
+              placeholder="hamed"
               autocomplete="on"
               autofocus
             />
@@ -51,22 +61,28 @@
           <br /><br />
           <label for="lname"
             >last name:
-            <input type="text" name="last" id="lname" />
+            <input
+              type="text"
+              name="last"
+              id="lname"
+              autocomplete="on"
+              placeholder="afifi"
+            />
           </label>
           <br /><br />
           <label for="pass">
             your password:
-            <input type="text" name="fname" id="pass" required />
+            <input type="password" name="fname" id="pass" required />
           </label>
           <br /><br />
           <label for="tphone">
-            your phone:
+            your 11 digit phone:
             <input
               type="tel"
               name="phone"
               id="tphone"
-              placeholder="ur 11 digit phone"
-              pattern="[0-9]{3} [0-9]{8}"
+              placeholder="000-00000000"
+              pattern="[0-9]{3}-[0-9]{8}"
             />
           </label>
           <br /><br />
@@ -82,12 +98,12 @@
             />
           </label>
           <br /><br />
-          <legend>
-            <label for="test"> test</label>
-            <input type="color" />
-          </legend>
-        </form>
-      </fieldset>
+          <label for="color"> your fav color:&emsp;</label>
+          <input type="color" name="favcolor" id="color" />
+          <br /><br />
+          <input type="submit" />
+        </fieldset>
+      </form>
     </main>
   </body>
 </html>

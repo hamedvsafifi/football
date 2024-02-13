@@ -1,0 +1,36 @@
+body {
+  background-color: rgba(33, 29, 29, 0.962);
+  color: whitesmoke;
+}
+button {
+  background-color: rgba(91, 78, 65, 0.962);
+  border-radius: 10px;
+}
+
+legend {
+  color: #48a3ff;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  font-size: larger;
+}
+
+fieldset {
+  max-width: fit-content;
+}
+
+a {
+  color: azure;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: small;
+}
+
+a:active {
+  color: deeppink;
+}
+
+a:visited {
+  color: darkgoldenrod;
+}
+a:hover {
+  color: aqua;
+}
