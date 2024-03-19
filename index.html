@@ -11,30 +11,28 @@
   <body>
     <header>
       <nav>
-        <button>
-          <a href="Hnavbar/football.html">matches - المباريات </a>
-        </button>
-        <button>
-          <a href="Hnavbar/shorts.html">shorts - لقطات</a>
-        </button>
-        <button>
-          <a href="Hnavbar/playes.html">players - اللاعبون</a>
-        </button>
-        <button>
-          <a href="Hnavbar/playes.html">players - اللاعبون</a>
-        </button>
-        <button>
-          <a href="Hnavbar/news.html">news - اهم الاخبار</a>
-        </button>
-        <button>
-          <a href="Hnavbar/contact.html">support - الدعم</a>
-        </button>
+        <a href="Hnavbar/football.html">matches - المباريات </a>
+
+        <a href="Hnavbar/shorts.html">shorts - لقطات</a>
+
+        <a href="Hnavbar/playes.html">players - اللاعبون</a>
+
+        <a href="Hnavbar/news.html">news - اهم الاخبار</a>
+
+        <a href="Hnavbar/contact.html">support - الدعم</a>
       </nav>
     </header>
     <br />
     <main>
-      <article>
-        <h1>Football</h1>
+      <article class="home">
+        <h1>
+          Foot
+          <img
+            style="filter: invert(1)"
+            width="20px"
+            src="https://cdn-icons-png.flaticon.com/512/53/53283.png"
+          />
+        </h1>
         <h4>football website for football lovers!!</h4>
         <p>
           <strong>Football</strong> website is a website that gathering all
@@ -46,64 +44,74 @@
         <fieldset>
           <legend>Sign Up</legend>
           <br />
-          <label for="fname">
-            first name:
-            <input
-              type="text"
-              name="first"
-              id="fname"
-              required
-              placeholder="hamed"
-              autocomplete="on"
-              autofocus
-            />
-          </label>
-          <br /><br />
-          <label for="lname"
-            >last name:
-            <input
-              type="text"
-              name="last"
-              id="lname"
-              autocomplete="on"
-              placeholder="afifi"
-            />
-          </label>
-          <br /><br />
-          <label for="pass">
-            your password:
-            <input type="password" name="fname" id="pass" required />
-          </label>
-          <br /><br />
-          <label for="tphone">
-            your 11 digit phone:
-            <input
-              type="tel"
-              name="phone"
-              id="tphone"
-              placeholder="000-00000000"
-              pattern="[0-9]{3}-[0-9]{8}"
-            />
-          </label>
-          <br /><br />
-          <label for="age">
-            your age:
-            <input
-              type="number"
-              name="age"
-              id="age"
-              min="1950"
-              max="2024"
-              value="2000"
-            />
-          </label>
-          <br /><br />
-          <label for="color"> your fav color:&emsp;</label>
-          <input type="color" name="favcolor" id="color" />
-          <br /><br />
-          <input type="submit" />
+          <div class="sign_up">
+            <label for="fname">
+              first name:
+              <input
+                type="text"
+                name="first"
+                id="fname"
+                required
+                placeholder="hamed"
+                autocomplete="on"
+                autofocus
+              />
+            </label>
+            <br /><br />
+            <label for="lname"
+              >last name:
+              <input
+                type="text"
+                name="last"
+                id="lname"
+                autocomplete="on"
+                placeholder="afifi"
+              />
+            </label>
+            <br /><br />
+            <label for="pass">
+              your password:
+              <input type="password" name="fname" id="pass" required />
+            </label>
+            <br /><br />
+            <label for="tphone">
+              your 11 digit phone:
+              <input
+                type="tel"
+                name="phone"
+                id="tphone"
+                placeholder="000-00000000"
+                pattern="[0-9]{3}-[0-9]{8}"
+              />
+            </label>
+            <br /><br />
+            <label for="age">
+              your age:
+              <input
+                type="number"
+                name="age"
+                id="age"
+                min="1950"
+                max="2024"
+                value="2000"
+              />
+            </label>
+            <br /><br />
+            <label for="color"> your fav color:&emsp;</label>
+            <input type="color" name="favcolor" id="color" />
+            <br /><br />
+            <input id="sign" type="submit" />
+          </div>
         </fieldset>
       </form>
+      <div class="supportico">
+        <img
+          width="50px"
+          height="50px"
+          src="Hnavbar/img/help-252.png"
+          alt="help"
+        />
+      </div>
     </main>
   </body>
 </html>

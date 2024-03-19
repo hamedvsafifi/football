@@ -1,13 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   background-color: rgba(33, 29, 29, 0.962);
   color: whitesmoke;
 }
-button {
-  background-color: rgba(91, 78, 65, 0.962);
-  border-radius: 10px;
+main {
+  max-width: fit-content;
+  padding: 10px;
+  text-align: center;
+}
+.home {
+  padding-left: 1%;
+  padding-bottom: 1%;
+  position: absolute;
+  top: 20%;
+  left: 35%;
+}
+.home > h1::first-letter {
+  color: rgb(0, 146, 0);
 }
 
 legend {
+  text-align: center;
+  margin: 3px;
   color: #48a3ff;
   font-family: "Times New Roman", Times, serif;
   font-style: italic;
@@ -16,12 +34,49 @@ legend {
 
 fieldset {
   max-width: fit-content;
+  border-radius: 15px;
+  max-width: 500px;
+  margin: auto;
+  position: absolute;
+  top: 35%;
+  left: 40%;
 }
 
 a {
   color: azure;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: small;
+  text-decoration: none;
+}
+
+nav {
+  background: rgb(58, 58, 58);
+  text-align: center;
+  padding: 2%;
+  word-spacing: 1em;
+}
+
+nav > a:hover {
+  margin: 10px;
+  background-color: rgba(91, 78, 65, 0.962);
+  border-radius: 5px;
+  padding: 3px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: small;
+}
+.sign_up {
+  font-style: oblique;
+  padding: 1rem;
+}
+
+#sign {
+  width: 20rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: wavy;
+  font-size: large;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
 }
 
 a:active {
@@ -29,8 +84,19 @@ a:active {
 }
 
 a:visited {
-  color: darkgoldenrod;
+  color: #5191b9;
 }
-a:hover {
-  color: aqua;
+
+.supportico {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  background-color: #63a8ed;
+  border-radius: 60%;
+  outline-color: rgb(105, 105, 245);
+  outline-style: groove;
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  scroll-behavior: smooth;
 }
